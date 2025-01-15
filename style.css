@@ -1,0 +1,247 @@
+:root {
+  --color-accent: oklch(87.06% 0.074 183.18 / 100%); 
+}
+
+html {
+  accent-color: var(--color-accent); 
+}
+
+body {
+    display: block;
+    margin: 8px;
+    max-width: 100ch;
+    font: 100%/1.5 system-ui;
+    margin-inline: max(1em, (100% - 100ch) / 2);
+    font-family: "Times New Roman", Times, serif;
+    background-color: oklch(87.06% 0.074 183.18 / 10%);
+}
+
+.main {
+  text-align: center;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+/* Navigation bar start */
+
+ul, li {
+  display: contents;
+}
+
+nav {
+  display: flex;
+  margin-bottom: max(1em, (100% - 100ch) / 2);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(80% 3% 200);
+
+  a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+  }
+  
+  .current {
+    border-bottom-width: 0.4em;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+    padding-bottom: 0.25em;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    border-bottom-width: 0.4em;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-accent);
+    /* background-color: oklch(from var(--color-accent) 95% 5% h); */
+    padding-bottom: 0.25em;
+  }
+}
+
+/* Navigation bar end */
+
+/* Contact start */
+
+body form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+button {
+  grid-column: 1 / -1;
+  border-radius: 10px;
+  background-color: var(--color-accent); 
+  border-width: 0;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input, textarea, button {
+  font: inherit;
+}
+
+/* Contact end */
+
+/* Projects start */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Resume start */
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+
+  a {
+    color: #4a5568;
+    font-size: 1.5rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+  a:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-block: 2em;
+  row-gap: 30px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+
+section header h2 {
+  text-align: center;
+}
+
+.card-container {
+  width: 20rem;
+  height: 25rem;
+  perspective: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 10px var(--color-accent);
+  border-radius: 15px;
+}
+
+.card-container:hover .flip-card {
+  transform: rotateY(180deg);
+  box-shadow: 0px 0px 20px var(--color-accent);
+  border-radius: 15px;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.front {
+  background-color: #ffffff;
+  text-align: center;
+  color: #333333;
+}
+
+.front img {
+  margin-bottom: 1rem;
+}
+
+.back {
+  background-color: #ffffff;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.front h3, .front h4 {
+  margin: 0.2; 
+}
+
+.front h4 {
+  margin-top: 0.5rem; 
+}
+
+.back header h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.back ul {
+  padding-left: 1.5rem;
+  margin: 0;
+  list-style: disc; 
+}
+
+.back ul li {
+  display: block; 
+  line-height: 1.5;
+}
+
+
+
+
+

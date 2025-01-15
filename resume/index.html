@@ -4,53 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="index.html">Resume</a></li>
+            <li><a class='current' href="index.html">Resume</a></li>
             <li><a href="../projects/index.html">Projects</a></li>
             <li><a href="../contact/index.html">Contact</a></li>
             <li><a href="https://github.com/snigdhapodugu" target="_blank">Github</a></li>
         </ul>
     </nav>
-
-    <h1>Resume</h1>
     
     <h1>Snigdha Podugu</h1>
-    <p class="contact-info">La Jolla, California 92092 | <a href="mailto:spodugu@ucsd.edu">spodugu@ucsd.edu</a> | (848) 252-1013 | <a href="https://linkedin.com/in/snigdha-podugu-841ab3255" target="_blank">LinkedIn</a></p>
-    
+
+    <div class="social-icons">
+        <a href="mailto:spodugu@ucsd.edu" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://linkedin.com/in/snigdha-podugu-841ab3255" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/snigdhapodugu" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
     <section>
         <header>
             <h2>Education</h2>
         </header>
-        <article>
-            <header>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/UCSD_logo.png" width="200">
-                <h3>University of California San Diego</h3>
-                <p>B.S., Data Science</p>
-                <time datetime="2023-09">September 2023</time> - <time datetime="2026-06">June 2026</time>
-            </header>
-            <ul>
-                <li>GPA: 4.0 | Provost Honors (All Quarters)</li>
-                <li>Relevant Coursework: Data Structures (Python & Java), Statistical Methods & Probability, Applied Data Science, Machine Learning</li>
-                <li>Campus Leadership: Eighth College Student Council, Women in Computing, Data Science Student Society, i4X @ The Basement</li>
-                <li>Awards: “Best Overall Project” Runner-up at SDSU Big Data Hackathon 2024, Top 15 at WIC Programming Competition Winter 2024</li>
-            </ul>
-        </article>
-        
-        <article>
-            <header>
-                <img src="https://cdnsm5-ss3.sharpschool.com/UserFiles/Servers/Server_804050/Image/icons/P%20arrow%20snip.JPG" width="200">
-                <h3>Piscataway High School</h3>
-                <p>High School Diploma</p>
-                <time datetime="2019-09">September 2019</time> - <time datetime="2023-06">June 2023</time>
-            </header>
-            <ul>
-                <li>GPA: 4.0 (4.8 weighted) | Class Rank: 1/554</li>
-            </ul>
-        </article>
+
+        <div class="card-row">
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/UCSD_logo.png" width="150" alt="UCSD Logo">
+                        <h3>University of California San Diego</h3>
+                        <h4>B.S., Data Science</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>University of California San Diego</h3>
+                                <h4>B.S., Data Science</h4>
+                                <p><time datetime="2023-09">September 2023</time> - <time datetime="2026-06">June 2026</time></p>
+                            </header>
+                            <ul>
+                                <li>GPA: 4.0 | Provost Honors (All Quarters)</li>
+                                <li>Relevant Coursework: Data Structures, Statistical Methods, Machine Learning</li>
+                                <li>Campus Leadership: Eighth College Student Council, Women in Computing</li>
+                                <li>Awards: Runner-up at SDSU Big Data Hackathon 2024</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://cdnsm5-ss3.sharpschool.com/UserFiles/Servers/Server_804050/Image/icons/P%20arrow%20snip.JPG" width="150" alt="PHS Logo">
+                        <h3>Piscataway High School</h3>
+                        <h4>High School Diploma</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>Piscataway High School</h3>
+                                <h4>High School Diploma</h4>
+                                <p><time datetime="2019-09">September 2019</time> - <time datetime="2023-06">June 2023</time></p>
+                            </header>
+                            <ul>
+                                <li>GPA: 4.0 (4.8 weighted) | Class Rank: 1/554</li>
+                                <li>Relevant Coursework: Java Certification and Machine Learning, Calculus I & II, Statistics</li>
+                                <li>Campus Leadership: Student Council, Future Business Leaders of America, National Honor Society</li>
+                                <li>Awards: National Qualifier for NJ-FBLA Computer Applications</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -58,140 +95,203 @@
             <h2>Experience</h2>
         </header>
 
-        <article>
-            <header>
-                <img src="https://www.ca-ilg.org/sites/main/files/imagecache/lightbox/main-images/carlsbad.jpg" width="200">
-                <h3>Storefront Optimization Intern</h3>
-                <p><strong>City of Carlsbad</strong></p>
-                <time datetime="2024-11">November 2024</time> - <time datetime="2025-01">Present</time>
-            </header>
-            <ul>
-                <li>Conducted data-driven research on storefront improvement programs for over 5,000 small businesses in Carlsbad.</li>
-                <li>Developed a data-backed framework for program optimization incorporating eligibility criteria, application workflows, and performance benchmarks.</li>
-            </ul>
-        </article>
+        <div class="card-row">
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://www.ca-ilg.org/sites/main/files/imagecache/lightbox/main-images/carlsbad.jpg" width="150" alt="City of Carlsbad Logo">
+                        <h3>City of Carlsbad</h3>
+                        <h4>Data Research Intern</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>City of Carlsbad</h3>
+                                <h4>Data Research Intern</h4>
+                                <p><time datetime="2023-09">September 2023</time> - <time datetime="2026-06">June 2026</time></p>
+                            </header>
+                            <ul>
+                                <li>Conduct data-driven research on storefront improvement programs for over 5,000 small businesses in Carlsbad.</li>
+                                <li>Develop a data-backed framework for program optimization incorporating eligibility criteria, application workflows, and performance benchmarks.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
-        <article>
-            <header>
-                <img src="https://wic.ucsd.edu/static/media/LogoCenterHome.bf743246.png" width="200">
-                <h3>Technical Activities Coordinator</h3>
-                <p><strong>Women in Computing @ UC San Diego</strong></p>
-                <time datetime="2024-11">November 2024</time> - <time datetime="2025-01">Present</time>
-            </header>
-            <ul>
-                <li>Contributed to making Envision UCSD’s premier female tech conference a platform for learning, networking, and inspiration.</li>
-                <li>Designed and implemented hands-on activities tailored to various engineering disciplines.</li>
-                <li>Managed logistics, including sourcing and organizing materials for activity execution.</li>
-            </ul>
-        </article>
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://wic.ucsd.edu/static/media/LogoCenterHome.bf743246.png" width="150" alt="WIC Logo">
+                        <h3>Women in Computing</h3>
+                        <h4>Technical Activities Coordinator</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>Women in Computing</h3>
+                                <h4>Technical Activities Coordinator</h4>
+                                <p><time datetime="2024-11">November 2024</time> - <time datetime="2025-01">Present</time></p>
+                            </header>
+                            <ul>
+                                <li>Contribute to making Envision UCSD’s premier female tech conference a platform for learning, networking, and inspiration.</li>
+                                <li>Design and implement hands-on activities tailored to various engineering disciplines.</li>
+                                <li>Manage logistics, including sourcing and organizing materials for activity execution.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
-        <article>
-            <header>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/ESPN_Plus.svg/1024px-ESPN_Plus.svg.png" width="200">
-                <h3>Video Broadcast Assistant</h3>
-                <p><strong>ESPN+</strong></p>
-                <time datetime="2024-09">September 2024</time> - <time datetime="2025-01">Present</time>
-            </header>
-            <ul>
-                <li>Contributed to the visual brand development of UCSD Athletics across ESPN+.</li>
-                <li>Managed the collection and archiving process for digital video content.</li>
-                <li>Assisted in the setup, teardown, and maintenance of audio and video equipment.</li>
-            </ul>
-        </article>
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQHPnh6_ovbRlg/company-logo_200_200/company-logo_200_200/0/1733544379227/eighth_college_student_council_uc_san_diego_logo?e=1744848000&v=beta&t=FXQJppMOgg4XGqnl3c3yEOxFtQwm-kBYozsR78gGHM8" width="150" alt="8CSC Logo">
+                        <h3>Eighth College Student Council</h3>
+                        <h4>Founding Member, Finance</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>Eighth College Student Council</h3>
+                                <h4>Founding Member, Finance</h4>
+                                <p><time datetime="2023-09">September 2023</time> - <time datetime="2025-01">Present</time></p>
+                            </header>
+                            <ul>
+                                <li>Founded 8CSC’s Finance Committee in collaboration with Student Advisory Board, Eighth College staff, and student leaders to uphold social justice and equity within Eighth College.</li>
+                                <li>Manage budget finances for the council, ensuring efficient allocation of resources and tracking expenses.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
-        <article>
-            <header>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/UCSD_logo.png" width="200">
-                <h3>Student Fee Advisory Committee Representative</h3>
-                <p><strong>University of California San Diego</strong></p>
-                <time datetime="2023-11">November 2023</time> - <time datetime="2025-01">Present</time>
-            </header>
-            <ul>
-                <li>Oversee allocation and management of $12M annual student fee budget ($400 per student).</li>
-                <li>Conduct detailed financial analysis of funding requests using data-driven approaches.</li>
-                <li>Evaluate and vote on resource proposals affecting 40,000+ students across campus.</li>
-            </ul>
-        </article>
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/ESPN_Plus.svg/1024px-ESPN_Plus.svg.png" width="150" alt="ESPN Logo">
+                        <h3>ESPN+</h3>
+                        <h4>Video Broadcast Assistant</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>ESPN+</h3>
+                                <h4>Video Broadcast Assistant</h4>
+                                <p><time datetime="2024-09">September 2024</time> - <time datetime="2025-01">Present</time></p>
+                            </header>
+                            <ul>
+                                <li>Contribute to the visual brand development of UCSD Athletics across ESPN+.</li>
+                                <li>Manage the collection and archiving process for digital video content.</li>
+                                <li>Assist in the setup, teardown, and maintenance of audio and video equipment.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
-        <article>
-            <header>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/UCSD_logo.png" width="200">
-                <h3>Procurement Card Specialist</h3>
-                <p><strong>University of California San Diego</strong></p>
-                <time datetime="2023-08">August 2023</time> - <time datetime="2024-09">September 2024</time>
-            </header>
-            <ul>
-                <li>Administered $55M annual credit portfolio for 3,600+ campus cardholders.</li>
-                <li>Streamlined procurement processes through SAP Concur, reducing processing time.</li>
-                <li>Resolved 100+ monthly customer inquiries through the ServiceNow platform.</li>
-                <li>Developed monthly data reports to identify spending patterns and potential cost savings.</li>
-            </ul>
-        </article>
-    </section>
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/UCSD_logo.png" width="150" alt="UCSD Logo">
+                        <h3>University of California San Diego</h3>
+                        <h4>Financial Data Analyst</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>University of California San Diego</h3>
+                                <h4>Financial Data Analyst</h4>
+                                <p><time datetime="2023-08">August 2023</time> - <time datetime="2024-09">September 2024</time></p>
+                            </header>
+                            <ul>
+                                <li>Administered $55M annual credit portfolio for 3,600+ campus cardholders.</li>
+                                <li>Streamlined procurement processes through SAP Concur, reducing processing time.</li>
+                                <li>Resolved 100+ monthly customer inquiries through the ServiceNow platform.</li>
+                                <li>Developed monthly data reports to identify spending patterns and potential cost savings.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
-    <section>
-        <header>
-            <h2>Technical Projects</h2>
-        </header>
-
-        <article>
-            <header>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/UCSD_logo.png" width="200">
-                <h3><a href="https://vaidehi-karve.github.io/lights-out/" target="_blank">U.S. Power Outage Predictions & Analysis</a></h3>
-                <p><strong>University of California San Diego</strong></p>
-                <time datetime="2024-11">November 2024</time> - <time datetime="2024-12">December 2024</time>
-            </header>
-            <ul>
-                <li>Analyzed 1,500+ power outages over 15 years to identify trends in weather, population, and state factors.</li>
-                <li>Improved outage duration predictions by 25% using data cleaning and machine learning techniques.</li>
-                <li>Built an interactive website to share findings with non-technical users.</li>
-                <li>Found a 20% higher model accuracy for natural outages, revealing prediction gaps in the existing system.</li>
-            </ul>
-        </article>
-
-        <article>
-            <header>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Sharp_HealthCare_official_company_logo.jpg" width="200">
-                <h3><a href="https://www.figma.com/proto/hg9KBV7C2KOsVNzWNCcLdL/SharpKids-iPad-Prototype?node-id=0-1&t=I9ZkkOmxWFZuJfXn-1" target="_blank">Geospatial Data Analysis for Healthcare Education</a></h3>
-                <p><strong>Sharp Healthcare</strong></p>
-                <time datetime="2024-10">October 2024</time>
-            </header>
-            <ul>
-                <li>Designed intuitive UI prototype integrating with Sharp Healthcare's existing mobile application.</li>
-                <li>Engineered geospatial data to analyze healthcare accessibility patterns of children in San Diego County.</li>
-                <li>Won 2nd Place for “Best Overall Project” in SDSU Big Data Hackathon 2024 against 60+ competing teams.</li>
-            </ul>
-        </article>
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://getlogovector.com/wp-content/uploads/2021/03/mathnasium-logo-vector.png" width="150" alt="Mathnasium Logo">
+                        <h3>Mathnasium</h3>
+                        <h4>Mathematics Instructor</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>Mathnasium</h3>
+                                <h4>Mathematics Instructor</h4>
+                                <p><time datetime="2022-11">November 2022</time> - <time datetime="2023-09">September 2023</time></p>
+                            </header>
+                            <ul>
+                                <li>Taught K-12 students mathematics using Mathnasium and team-teaching methods in a fast-paced environment.</li>
+                                <li>Managed the academic progress of 25+ students at a time, adapting teaching strategies to meet individual grade levels.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
         <header>
             <h2>Certifications</h2>
         </header>
-        <article>
-            <header>
-                <img src="https://stateentityprofile.ca.gov/Uploads/logo-175-CDI.png" width="200">
-                <h3>Life and Health Insurance License</h3>
-                <p><strong>California Department of Insurance</strong></p>
-                <time datetime="2024-01">January 2024</time>
-            </header>
-            <ul>
-                <li>Comprehensive knowledge of life and health insurance products.</li>
-                <li>Familiar with using statistical methods and data analysis to assess risk and optimize offerings.</li>
-            </ul>
-        </article>
-    </section>
 
-    <section>
-        <header>
-            <h2>Skills</h2>
-        </header>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, Java, JavaScript, CSS, HTML</li>
-            <li><strong>Data Analysis:</strong> Pandas, NumPy, SciPy</li>
-            <li><strong>Enterprise Software:</strong> SAP Concur, ServiceNow, Microsoft Office Suite, Adobe Creative Suite</li>
-            <li><strong>Design & UX:</strong> Figma (Wireframing, Prototyping), Digital Photography, Video Broadcast Engineering</li>
-        </ul>
+        <div class="card-row">
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://stateentityprofile.ca.gov/Uploads/logo-175-CDI.png" width="150" alt="California Department of Insurance Logo">
+                        <h3>California Department of Insurance</h3>
+                        <h4>Life and Health Insurance License</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>California Department of Insurance</h3>
+                                <h4>Life and Health Insurance License</h4>
+                                <p><time datetime="2024-01">January 2024</time></p>
+                            </header>
+                            <ul>
+                                <li>Comprehensive knowledge of life and health insurance products.</li>
+                                <li>Familiar with using statistical methods and data analysis to assess risk and optimize offerings.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfyrSUGu-tCrzIFMQdIWYMBbl8NISlsaTA-n14sDXqkfX9DXxDEDFSYDVzh2htz33GIQ&usqp=CAU" width="150" alt="NJ Department of Education Logo">
+                        <h3>New Jersey Department of Education</h3>
+                        <h4>Seal of Biliteracy in Spanish</h4>
+                    </div>
+                    <div class="back">
+                        <article>
+                            <header>
+                                <h3>New Jersey Department of Education</h3>
+                                <h4>Seal of Biliteracy in Spanish</h4>
+                                <p><time datetime="2023-06">June 2023</time></p>
+                            </header>
+                            <ul>
+                                <li>Demonstrated advanced proficiency in speaking, reading, writing, and listening according to ACTFL standards.</li>
+                                <li>Recognized for achieving cultural and linguistic competency through rigorous language assessments.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
