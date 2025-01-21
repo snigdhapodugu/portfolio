@@ -1,5 +1,6 @@
 :root {
   --color-accent: oklch(87.06% 0.074 183.18 / 100%); 
+  color-scheme: light dark;
 }
 
 html {
@@ -7,13 +8,15 @@ html {
 }
 
 body {
+    background-color: canvas; 
+    color: canvastext;
     display: block;
     margin: 8px;
     max-width: 100ch;
     font: 100%/1.5 system-ui;
     margin-inline: max(1em, (100% - 100ch) / 2);
     font-family: "Times New Roman", Times, serif;
-    background-color: oklch(87.06% 0.074 183.18 / 10%);
+    /* background-color: oklch(87.06% 0.074 183.18 / 10%); */
 }
 
 .main {
@@ -31,11 +34,12 @@ ul, li {
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: max(1em, (100% - 100ch) / 2);
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
 
   a {
     flex: 1;
@@ -45,7 +49,7 @@ nav {
     padding: 0.5em;
   }
   
-  .current {
+  a.current {
     border-bottom-width: 0.4em;
     border-bottom-style: solid;
     border-bottom-color: oklch(80% 3% 200);
@@ -241,7 +245,17 @@ section header h2 {
   line-height: 1.5;
 }
 
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
 
-
-
-
+.color-scheme select {
+  padding: 2px 4px;
+  font-size: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
