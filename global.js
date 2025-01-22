@@ -48,9 +48,9 @@ const automaticLabel = isDarkMode ? "Automatic (Dark)" : "Automatic (Light)";
 document.body.insertAdjacentHTML(
   "afterbegin",
   `
-    <label class="color-scheme">
+    <label class="color-scheme-theme">
         Theme: 
-        <select class="color-scheme" id="theme-selector">
+        <select class="color-scheme-select" id="theme-selector">
             <option value="light dark">${automaticLabel}</option>
             <option value="light">Light</option>
             <option value="dark">Dark</option>

@@ -1,5 +1,6 @@
 :root {
-  --color-accent: oklch(87.06% 0.074 183.18 / 100%); 
+  --color-accent: oklch(71.14% 0.2294 259.28); 
+  /* oklch(87.06% 0.074 183.18 / 100%);  */
   color-scheme: light dark;
 }
 
@@ -245,17 +246,21 @@ section header h2 {
   line-height: 1.5;
 }
 
-.color-scheme {
+/* Color select start */
+
+.color-scheme-theme {
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   font-size: 80%;
   font-family: inherit;
 }
 
-.color-scheme select {
-  padding: 2px 4px;
-  font-size: inherit;
-  border: 1px solid #ccc;
+.color-scheme-select { 
+  padding: 2px 2px;
+  font-family: inherit;
+  border: 1px solid var(--color-accent);
   border-radius: 4px;
 }
+
+/* Color select end */
