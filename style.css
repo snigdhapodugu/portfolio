@@ -25,7 +25,62 @@ body {
 
   img {
     border-radius: 10px;
+    box-shadow: 0px 0px 8px var(--color-accent);
+    margin-bottom: 30px;
   }
+}
+
+.proj-container {
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px var(--color-accent);
+  padding: 24px;
+  margin-bottom: 18px;
+  color: #000000;
+}
+
+.git-container {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-stats {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px var(--color-accent);
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+}
+
+#profile-stats h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+dd {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #000000;
 }
 
 /* Navigation bar start */
@@ -107,10 +162,17 @@ input, textarea, button {
   gap: 1em;
 }
 
+.projects img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
 article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 4;
 }
 
 h1 {

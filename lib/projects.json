@@ -1,0 +1,74 @@
+[
+    {
+        "title": "iHARP Sea Level Anomaly Detection",
+        "year": "2025",
+        "image": "https://iharp.umbc.edu/wp-content/uploads/sites/686/2022/01/iharp-logo.jpg",
+        "description": "Conducted data preprocessing and cleaning on large geospatial datasets, transforming raw tide gauge data into a structured format for analysis. Designed and implemented a Random Forest Classifier to predict anomalies with a focus on model performance."
+    },
+    {
+        "title": "U.S. Power Outage Predictions & Analysis",
+        "year": "2024",
+        "image": "https://thumbs.dreamstime.com/b/light-bulb-creative-sketch-draw-vector-illustration-electric-lamp-logo-sign-91020721.jpg",
+        "description": "Analyzed 1,500+ power outages over 15 years to identify trends in weather, population, and state factors. Built an interactive website to share findings with non-technical users."
+    },
+    {
+        "title": "Geospatial Data Analysis for Healthcare Education in Children",
+        "year": "2024",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVIchkuCUtKw6Gj6ClcORqTd-XYEISB5qP4M9-BuZOYeSBgwRemxSyxT9jqy57oGayiA&usqp=CAU",
+        "description": "Utilized data monetization to develop SharpKids, a UI prototype and product designed to integrate with Sharp Healthcare's existing app. Focuses on exploring geospatial data and analysis to provide healthcare education to children across San Diego and the nation."
+    },
+    {
+        "title": "Missing Department Administrator Analysis",
+        "year": "2024",
+        "image": "https://ipxy.io/img/WVhKMGFXTnNaVWxrUFVOMWJtUjVYM1JRYURkdkpuVl5iRDFvZEhSd2NeVV5OVE5CSlRJMU1rWWxNalVeUm5OamIyNTBaVzUwTFdOa1p6UXRNITVqWkc1KmJuTjBZV2ReWVcwdVkyOXRKVEkxTWtaMkpUSTFNa1owTlRFdU1qa3pOVEF0TVRVbE1qVV5Sak0xT1RZM01qVSVNbDheT1RRME1qVTRNekk1TkRNNE1EZGZOVE0xTVRZMk56RXpOVFUlTXpjek1EQSVPVjl1TG0qd1peVV5OVE5HYzJVbE1qVXpSRGNsTWpVXk5uTjBjQ1VeTlRORVpITjBMVyp3WjE5bE16VWxNalVeTmw5dVkxOW9kQ1VeTlRORWMyTnZiblJsYm5RdFkyUm5OQzBeTG1Oa2JtbHVjM1JoWjNKaGJTNWpiMjBsTWpVXk5sOXVZMTlqWVhRbE1qVXpSREV3Tl5VXk5USTJYMjVqWDI5b1leVV5OVE5FZEYqWFlWZ15hVFZaTkd0Uk4ydE9kbWRIUm1KZmFIb2xNalVeTm1Wa2JTVV5OVE5FUVU5Uk1XTXdkMEpCUVVGQkpUSTFNalpqWTJJbE1qVXpSRGN0TlNVXk5USTJhV2RmWTJGamFHVmZhMlY1SlRJMU0wUk5la1V3VGxSWmVFMTZhM2hOYWxFXlQxUkJlVTFFVFRWTlpeVV5OVEkxTTBRbE1qVV5OVE5FTGpJdFkyTiFOXjAxSlRJMU1qWnZhQ1VeTlRORU1EQmZRVmxCV25SNGJYKnNhMVJVTW1oTE1VVlpZbmhxYzAxTk9HdHdjWFJYT0ZodmFrNWZOWFIlYkRCWFVHMWpVU1VeTlRJMmIyVWxNalV6UkRZMk5rWkZSRU5CSlRJMU1qWmZibU5mYzJsa0pUSTFNMFE0WWpNMU5EWQ=",
+        "description": "Utilized Microsoft Excel and SAP Concur Reporting to clean and analyze data on over 200 missing department administrators. Improved reporting efficiency in SAP Concur."
+    },
+    {
+        "title": "Merchant Category Code Mapping",
+        "year": "2024",
+        "image": "https://ipxy.io/img/WVhKMGFXTnNaVWxrUFVOMWJtUjVYM1JRYURkdkpuVl5iRDFvZEhSd2NeVV5OVE5CSlRJMU1rWWxNalVeUm5OamIyNTBaVzUwTFdOa1p6UXRNITVqWkc1KmJuTjBZV2ReWVcwdVkyOXRKVEkxTWtaMkpUSTFNa1owTlRFdU1qa3pOVEF0TVRVbE1qVV5Sak0xT1RZM01qVSVNbDheT1RRME1qVTRNekk1TkRNNE1EZGZOVE0xTVRZMk56RXpOVFUlTXpjek1EQSVPVjl1TG0qd1peVV5OVE5HYzJVbE1qVXpSRGNsTWpVXk5uTjBjQ1VeTlRORVpITjBMVyp3WjE5bE16VWxNalVeTmw5dVkxOW9kQ1VeTlRORWMyTnZiblJsYm5RdFkyUm5OQzBeTG1Oa2JtbHVjM1JoWjNKaGJTNWpiMjBsTWpVXk5sOXVZMTlqWVhRbE1qVXpSREV3Tl5VXk5USTJYMjVqWDI5b1leVV5OVE5FZEYqWFlWZ15hVFZaTkd0Uk4ydE9kbWRIUm1KZmFIb2xNalVeTm1Wa2JTVV5OVE5FUVU5Uk1XTXdkMEpCUVVGQkpUSTFNalpqWTJJbE1qVXpSRGN0TlNVXk5USTJhV2RmWTJGamFHVmZhMlY1SlRJMU0wUk5la1V3VGxSWmVFMTZhM2hOYWxFXlQxUkJlVTFFVFRWTlpeVV5OVEkxTTBRbE1qVV5OVE5FTGpJdFkyTiFOXjAxSlRJMU1qWnZhQ1VeTlRORU1EQmZRVmxCV25SNGJYKnNhMVJVTW1oTE1VVlpZbmhxYzAxTk9HdHdjWFJYT0ZodmFrNWZOWFIlYkRCWFVHMWpVU1VeTlRJMmIyVWxNalV6UkRZMk5rWkZSRU5CSlRJMU1qWmZibU5mYzJsa0pUSTFNMFE0WWpNMU5EWQ=",
+        "description": "Utilized Microsoft Excel to map over 500 MCCs to over 100 Expense Types. Streamlined choosing Expense Types in the launch of Concur 2.0."
+    },
+    {
+        "title": "Meteorite Landing Data Analysis",
+        "year": "2023",
+        "image": "https://www.anl.gov/sites/www/files/styles/article_teaser_16x9/public/2020-12/16x9_shutterstock_1090585073.jpg?h=8abcec71&itok=yAw7ZoCR",
+        "description": "Leveraged NASA's Open Data Portal to analyze global meteorite landing patterns. Applied statistical methods including hypothesis testing, random sampling, and Total Variation Distance to identify meteor fall locations."
+    },
+    {
+        "title": "Taylor Swift Song Analysis",
+        "year": "2023",
+        "image": "https://www.billboard.com/wp-content/uploads/2024/04/Taylor-Swift-_-The-Eras-Tour-Singapore-eyeliner-billboard-1548.jpg?w=942&h=623&crop=1",
+        "description": "Developed data visualizations using matplotlib.pyplot to illustrate musical trends and listener preferences. Created a song recommendation system based on audio feature similarity."
+    },
+    {
+        "title": "Project 5",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for Project 5."
+    },
+    {
+        "title": "Project 4",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for Project 4."
+    },
+    {
+        "title": "Project 3",
+        "year": "2021",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for Project 3."
+    },
+    {
+        "title": "Project 2",
+        "year": "2020",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for Project 2."
+    },
+    {
+        "title": "Project 1",
+        "year": "2019",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for Project 1."
+    }
+]
