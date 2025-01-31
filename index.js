@@ -24,5 +24,5 @@ if (profileStats) {
             <dt>Followers:</dt><dd>${githubData.followers}</dd>
             <dt>Following:</dt><dd>${githubData.following}</dd>
           </dl>
-      `;
-  }
+    `;
+}
