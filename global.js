@@ -113,39 +113,45 @@ export async function fetchJSON(url) {
 
 // const data = fetchJSON('../lib/projects.json')
 
-export function renderProjects(project, containerElement, headingLevel = 'h2') {
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   if (!containerElement) {
     console.error('Invalid container element.');
     return;
   } 
 
   const headings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+
   if (!headings.includes(headingLevel)) {
       console.error('Invalid heading level.');
       headingLevel = 'h2'; 
   }
 
-  const article = document.createElement('article');
+  containerElement.innerHTML = '';
 
-  let content = '';
-  for (let key in project) {
-    if (key === "title") {
-      content += `<${headingLevel}>${project[key]}</${headingLevel}>`;
-    // } else if (key === "year") {
-    //   content += `<h4>${project[key]}<h4>`;
-    } else if (key === "image") {
-      content += `<img src="${project[key]}" alt="${project.title}">`;
-    } else if (key === "description") {
-      content += `<p>${project[key]}</p>`;
+  for (let project of projects) {
+    const article = document.createElement('article');
+
+    let content = `<${headingLevel}>${project.title}</${headingLevel}>`;
+
+    if (project.image) {
+      content += `<img src="${project.image}" alt="${project.title}">`;
     }
-  }
-  article.innerHTML = content;
 
-  containerElement.appendChild(article);
+    if (project.description || project.year) {
+      content += `<div class="project-details">`;
+      if (project.description) {
+        content += `<p>${project.description}</p>`;
+      }
+      if (project.year) {
+        content += `<h4>${project.year}</h4>`; 
+      }
+      content += `</div>`;
+    }
+    article.innerHTML = content;
+
+    containerElement.appendChild(article);
+    }
 }
-
-// const container = document.querySelector('.projects');
-// renderProjects(data[0], container);
 
 export async function fetchGitHubData(username) {
   return fetchJSON(`https://api.github.com/users/${username}`);

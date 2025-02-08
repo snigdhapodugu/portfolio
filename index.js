@@ -6,11 +6,7 @@ const latestProjects = projects.slice(0, 3);
 
 const projectsContainer = document.querySelector('.projects');
 
-projectsContainer.innerHTML = '';
-
-for (let project of latestProjects) {
-    renderProjects(project, projectsContainer, 'h3');
-}
+renderProjects(latestProjects, projectsContainer, 'h3');
 
 const profileStats = document.querySelector('#profile-stats dl');
 
