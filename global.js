@@ -146,6 +146,9 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
       if (project.year) {
         content += `<h4>${project.year}</h4>`; 
       }
+      if (project.url) {
+        content += `<a href="${project.url}" target="_blank" class="proj-link">See More</a>`; 
+      }
       content += `</div>`;
     }
     article.innerHTML = content;

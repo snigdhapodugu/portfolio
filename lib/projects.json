@@ -1,5 +1,12 @@
 [
     {
+        "title": "Bikewatching in Boston",
+        "year": "2025",
+        "image": "../images/boston-site.png",
+        "description": "Site that showcases the bike routes in Boston and Cambridge. Can filter traffic data based on time of day. Additionally, can move the map based on campus location.",
+        "url": "https://snigdhapodugu.github.io/bikewatching/"
+    },
+    {
         "title": "iHARP Sea Level Anomaly Detection",
         "year": "2025",
         "image": "https://iharp.umbc.edu/wp-content/uploads/sites/686/2022/01/iharp-logo.jpg",
@@ -64,11 +71,5 @@
         "year": "2020",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Placeholder for Project 2."
-    },
-    {
-        "title": "Project 1",
-        "year": "2019",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Placeholder for Project 1."
     }
 ]
